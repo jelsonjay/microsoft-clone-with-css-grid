@@ -1,11 +1,77 @@
-*{
-margin: 0%;
-padding: 0%;
-box-sizing: border-box;
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
-:root{
---clr-white: hsl(0, 0%, 98%);
+
+:root {
+    --clr-white: hsl(0, 0%, 98%);
+    --clr-blue: hsl(240, 90%, 41%);
+    --clr-item-1: hsl(50, 27%, 46%);
+    --clr-item-2:hsl(39, 81%, 65%);
+    --clr-item-3: hsl(25, 64%, 47%);
+    --clr-item-4: hsl(0, 9%, 75%);
+    --clr-item-5:hsl(16, 83%, 60%);
+    --clr-item-6:hsl(0, 59%, 41%);
+    --crl-item-7: hsl(320, 60%, 48%);
+    --clr-item-8:hsl(180, 62%, 42%);
 }
-body{
-background-color:var(--clr-white);
+
+body {
+background-color: var(--clr-white);
+}
+
+h1 {
+  text-align: center;  
+}
+
+.grid{
+    max-width: 900px;
+    margin: 0 auto;
+    grid-gap: 0.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: 
+    "card1 card1 card1 card2"
+    "card3 card3 card4 card5"
+    "card6 card7 card8 card8"
+    ;
+}
+
+
+.card-1 {
+grid-area: card1;
+background-color: var(--clr-item-1);
+}
+.card-2 {
+grid-area: card2;
+background-color: var(--clr-item-2);
+}
+.card-3 {
+grid-area: card3;
+ background-color: var(--clr-item-3);
+}
+.card-4 {
+    grid-area: card4;
+    background-color: var(--clr-item-4);
+}
+.card-5 {
+    grid-area: card5;
+    background-color: var(--clr-item-5);
+}
+.card-6 {
+    grid-area: card6;
+    background-color: var(--clr-item-6);
+}
+.card-7 {
+    grid-area: card7;
+    background-color: var(--crl-item-7);
+}
+.card-8 {
+    grid-area: card8;
+    background-color: var(--clr-item-8);
 }
